@@ -58,7 +58,8 @@ peers might have understood the project's instructions and the
 scope of its functionalities. Always keep an open mind and grade
 him/her as honestly as possible. The pedagogy is valid only and
 only if peer-evaluation is conducted seriously.
-Guidelines
+
+## Guidelines
 You must compile with clang++, with -Wall -Wextra -Werror
 As a reminder, this project is in C++98 and C++20 members functions or containers are NOT expected.
 
@@ -71,6 +72,8 @@ Any of these means that you must flag the project as Forbidden Function:
 - Use of a function not allowed in the subject
 - Use of "using namespace" or "friend"
 - Use of an external library, or C++20 features
+
+---
 
 ## ex00
 As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (For example, using console output, etc... The student has to be able to explain how it proves anything). If it does not, you MUST NOT grade this part.

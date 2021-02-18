@@ -58,7 +58,8 @@ peers might have understood the project's instructions and the
 scope of its functionalities. Always keep an open mind and grade
 him/her as honestly as possible. The pedagogy is valid only and
 only if peer-evaluation is conducted seriously.
-Guidelines
+
+## Guidelines
 You must compile with clang++, with -Wall -Wextra -Werror
 As a reminder, this project is in C++98 and C++20 members functions or containers are NOT expected.
 
@@ -72,8 +73,6 @@ Any of these means that you must flag the project as Forbidden Function:
 - Use of "using namespace" or "friend"
 - Use of an external library, or C++20 features
 - Use of an already existing container, or any existing function, to implement another container
-Attachments
-subject.pdf
 
 ## Exercise 00: My First Canonical
 This exercice introduces the notion of canonical class with a simple arithmetic exemple: the fixed point numbers.
