@@ -42,7 +42,8 @@ evaluated student and make sure both of you are okay with this.
 be properly freed before the end of execution.
 You are allowed to use any of the different tools available on the computer, such as
 leaks, valgrind, or e_fence. In case of memory leaks, tick the appropriate flag.
-Disclaimer
+
+## Disclaimer
 Please respect the following rules:
 
 - Remain polite, courteous, respectful and constructive
@@ -76,14 +77,14 @@ Any of these means that you must flag the project as Forbidden Function:
 ---
 
 ## ex00
-As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (For example, using console output, etc... The student has to be able to explain how it proves anything). If it does not, you MUST NOT grade this part.
-
----
+*As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (For example, using console output, etc... The student has to be able to explain how it proves anything). If it does not, you MUST NOT grade this part.*
 
 There must be a ponyOnTheHeap function that allocates a new Pony
 using "new", then deletes it (using "delete", obviously).
 There must be a ponyOnTheStack function that allocates a new Pony on the stack (WITHOUT
 using "new" or "malloc").
+
+---
 
 ## ex01
 Theoretically, two choices here are right: Either changing the allocation
@@ -93,10 +94,10 @@ the std::cout.
 Ask the student to explain WHY he did what he did before marking
 this as done. He has to answer something other than "Meh, it just works".
 
-## ex02
-As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.
-
 ---
+
+## ex02
+*As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.*
 
 All the classes and functions required by the subject must exist
 and work as specified, otherwise, no points for this exercise.
@@ -107,10 +108,10 @@ The Zombies created by randomChump must either be allocated on the stack (so imp
 at the end of the function), or allocated on the heap then explicitly deleted.
 The student must justify his choice.
 
-## ex03
-As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.
-
 ---
+
+## ex03
+*As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.*
 
 All the classes and functions required by the subject must exist
 and work as specified, otherwise, no points for this exercise.
@@ -119,16 +120,18 @@ in the constructor of the ZombieHorde, and should be allocated as an array,
 either on the stack, either explictly using new[], in which case they should
 be deleted in the destructor. The student must explain his choice.
 
+---
+
 ## ex04
 There is a string containing "HI THIS IS BRAIN", then a pointer
 to it, then a reference to it, and it is displayed through the pointer then
 through the reference. As the subject says, really, that's it, no tricks
 or anything.
 
-## ex05
-As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.
-
 ---
+
+## ex05
+*As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.*
 
 All the classes and functions required by the subject must exist
 and work as specified, otherwise, no points for this exercise.
@@ -141,10 +144,10 @@ main() that the subject provides, it must, as the subject says, display two
 identical adresses.
 The student should be able to explain why he did this.
 
-## ex06
-As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc ...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.
-
 ---
+
+## ex06
+*As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc ...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.*
 
 All the classes and functions required by the subject must exist
 and work as specified, otherwise, no points for this exercise.
@@ -157,6 +160,8 @@ In HumanB, only the pointer is acceptable, since the field is not
 set at creation time, so it can not be a reference.
 The student must justify his choices correctly.
 
+---
+
 ## ex07
 The program must work as the subject specifies. A reasonable amount
 of errors must be handled. If you can find an error that isn't handled, and
@@ -164,10 +169,10 @@ isn't completely esoteric, no points for this exercise.
 The program must read from the file using an ifstream or equivalent,
 and write using an ofstream or equivalent."
 
-## ex08
-As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.
-
 ---
+
+## ex08
+*As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.*
 
 All the classes and functions required by the subject must exist
 and work as specified, otherwise, no points for this exercise.
@@ -175,16 +180,18 @@ The "action" function must use an array of pointer to member functions
 to choose which action should be called. Any if/elseif/elseif/else or
 other crap like this counts as wrong.
 
-## ex09
-As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.
-
 ---
+
+## ex09
+*As the subject says, this exercise requires the student to turn in a "main" function, and it must, when run, demonstrate that the exercise works as intended (for example, using console output, etc...). The student has to be able to explain how it proves anything. If it does not, you MUST NOT grade this part.*
 
 All the classes and functions required by the subject must exist
 and work as specified, otherwise, no points for this exercise.
 Must work exactly as the subject requires.
 As with the previous exercise, the action to take when
 using "log" must be determined using an array of pointers to member functions.
+
+---
 
 ## ex10
 The program must work as the subject specifies. Any error that

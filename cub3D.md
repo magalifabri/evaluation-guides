@@ -2,12 +2,13 @@
 
 Januari 2021
 
+---
+
 ## Mandatory part
 
 ### Executable name
 Check that the project compiles well (without re-link) when you excute the `make`
 command and that the executable name is `cub3D`.
-
 
 ### Configuration file
 Check that you can configure ALL the following elements in the configuration file.
@@ -28,7 +29,6 @@ the configuration file is misconfigured (for example an unknow key, double keys,
 an invalid path..) or if the filename doesn't end with the `.cub` extension.
 
 If not, the defence is over and the final grade will be 0.
-
 
 ### Technical elements of the display
 We're going to evaluate the technical elements of the display. Run the
@@ -51,7 +51,6 @@ must remain consistent.
 
 - Set a resolution (R key) in the config file greater than the actual screen resolution.
 The program must resize the window to fit the screen resolution.
-
 
 ### User basic events
 In this section we're going to evaluate the program's user
@@ -134,6 +133,8 @@ must not show any strange behaviors and it must stay functional.
 
 - Modify the map. The program must not show any strange behaviors
 and it must stay functional if the map is well configured, if not it must raise an error.
+
+---
 
 ## Bonus
 We will look at your bonuses if and only if your mandatory part is excellent. This means that you must complete the mandatory part, beginning to end, and your error management must be flawless, even in cases of twisted or bad usage. So if the mandatory part didn't score all the point during this defence bonuses will be totally ignored.

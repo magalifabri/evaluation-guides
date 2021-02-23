@@ -42,7 +42,8 @@ evaluated student and make sure both of you are okay with this.
 be properly freed before the end of execution.
 You are allowed to use any of the different tools available on the computer, such as
 leaks, valgrind, or e_fence. In case of memory leaks, tick the appropriate flag.
-Disclaimer
+
+## Disclaimer
 Please respect the following rules:
 
 - Remain polite, courteous, respectful and constructive
@@ -74,6 +75,8 @@ Any of these means that you must flag the project as Forbidden Function:
 - Use of an external library, or C++20 features
 - Use of an already existing container, or any existing function, to implement another container
 
+---
+
 ## Exercise 00: My First Canonical
 This exercice introduces the notion of canonical class with a simple arithmetic exemple: the fixed point numbers.
 
@@ -92,6 +95,8 @@ A canonical class must provide at least:
 - A copy constructor
 - An assignation operator
 Are these elements present and functional?
+
+---
 
 ## Exercise 01: Towards a more useful fixed point class
 Ex00 was a good start, but our class is still pretty useless being only able to represent the fixed point value 0.0.
@@ -138,6 +143,8 @@ The class must provide 4 non member functions: min, max and their const overload
 ### Comparison operators
 The class must provide 6 comparison operators: \>, <, >=, <=, == and !=.
 Are they present and functional?
+
+---
 
 ## Exercise 03: Fixed point expressions
 A small fixed point expressions interpreter.
