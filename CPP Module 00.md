@@ -98,7 +98,8 @@ Rate the EXIT command as described in the subject.
 
 ### Visibility
 The attributes of the class Contact should be private and the class
-should expose the corresponding accessors.\r\nAlso check that anything that
+should expose the corresponding accessors.
+Also check that anything that
 should always be used inside a class (not only in the Contact class) is private
 and that anything that can be used outside a class is public. Beginners tend
 to put everything in public, that's what you want to spot here.
