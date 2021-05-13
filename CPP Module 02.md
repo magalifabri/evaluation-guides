@@ -84,8 +84,8 @@ This exercice introduces the notion of canonical class with a simple arithmetic 
 The Fixed class (or whatever its name) must provide accessors to
 the raw value:
 - int getRawBits( void ) const;
-- void setRawBits(
-int const raw );
+- void setRawBits( int const raw );
+
 Are these member functions present and functional?
 
 ### Canonical
@@ -94,6 +94,7 @@ A canonical class must provide at least:
 - A destructor
 - A copy constructor
 - An assignation operator
+
 Are these elements present and functional?
 
 ---
