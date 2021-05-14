@@ -103,6 +103,7 @@ The following member functions are present and work as specified:
 - meleeAttack
 - takeDamage
 - beRepaired
+
 Also, the constraints about the HP limits and the armor reduction must be
 taken into account.
 
@@ -123,6 +124,7 @@ The following member functions are present and work as specified:
 - meleeAttack
 - takeDamage
 - beRepaired
+
 Also, the constraints about the HP limits and the armor reduction must be
 taken into account.
 The outputs of the constructor, destructor, rangedAttack and
