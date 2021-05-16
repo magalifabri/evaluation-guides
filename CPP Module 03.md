@@ -80,7 +80,7 @@ Any of these means that you must flag the project as Forbidden Function:
 ## ex00
 As usual, there has to be a main function that contains enough tests to prove the program works as required. If there isn't, do not grade this exercise.
 
-Class and attributes
+### Class and attributes
 There is a FragTrap class present.
 It has all the required attributes.
 Its attributes are initialized to the required values.
@@ -157,8 +157,7 @@ and FragTrap are now in ClapTrap, namely:
 - Name
 - Melee damage
 - Ranged damage
-- Armor
-- damage reduction
+- Armor damage reduction
 - takeDamage
 - beRepaired
 
