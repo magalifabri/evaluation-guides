@@ -1,6 +1,6 @@
 # Evaluation Guide: CPP Module 00
 
-Februari 2021
+February 2021
 
 ## Introduction
 - Only grade the work that is in the student or group's
