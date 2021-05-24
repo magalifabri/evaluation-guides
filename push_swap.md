@@ -1,8 +1,9 @@
-# Evaluation Guide: push_swap
+# Evaluation Guide: push_swap (new)
 
-March 2021
+May 2021
 
 ## Introduction
+
 Please respect the following rules:
 
 - Remain polite, courteous, respectful and constructive throughout
@@ -20,6 +21,7 @@ him/her as honestly as possible. The pedagogy is valid only and
 only if peer-evaluation is conducted seriously.
 
 ## Guidelines
+
 - Only grade the work that is in the student or group's GiT
 repository.
 
@@ -48,17 +50,137 @@ have not finished it) in order to identify any issues that may
 have caused this failure and avoid repeating the same mistake in
 the future.
 
-# Mandatory part
+---
+
+## Mandatory part
+
 Reminder : Remember that for the duration of the defence, no segfault, nor other unexpected, premature, uncontrolled or unexpected termination of the program, else the final grade is 0. Use the appropriate flag. This rule is active thoughout the whole defence.
 
-## Memory leaks
+### Memory leaks
+
 Throughout the defence, pay attention to the amount of memory
 used by push_swap (using the command top for example) in order
 to detect any anomalies and ensure that allocated memory is
 properly freed. If there is one memory leak (or more), the final
 grade is 0.
 
-## Checker program - Error management
+### Error management
+
+In this section, we'll evaluate the push_swap's error management.
+If at least one fails, no points will be awarded for this
+section. Move to the next one.
+
+- Run push_swap with non numeric parameters. The program must
+display "Error".
+
+- Run push_swap with a duplicate numeric parameter. The program
+must display "Error".
+
+- Run push_swap with only numeric parameters including one greater
+than MAXINT. The program must display "Error".
+
+- Run push_swap without any parameters. The program must not
+display anything and give the prompt back.
+
+### Push_swap - Identity test
+
+In this section, we'll evaluate push_swap's behavior when given
+a list, which has already been sorted. Execute the following 3
+tests. If at least one fails, no points will be awarded for this
+section. Move to the next one.
+
+- Run the following command "$>./push_swap 42". The program
+should display nothing (0 instruction).
+
+- Run the following command "$>./push_swap 0 1 2 3". The
+program should display nothing (0 instruction).
+
+- Run the following command "$>./push_swap 0 1 2 3 4 5 6 7 8
+9". The program should display nothing (0 instruction).
+
+### Push_swap - Simple version
+
+If the following test fails, no points will be awarded for this
+section. Move to the next one. Use the checker binary given on the
+attachments.
+
+- Run "$>ARG="2 1 0"; ./push_swap $ARG | ./checker_OS $ARG".
+Check that the checker program displays "OK" and that the
+size of the list of instructions from push_swap is 2 OR 3.
+Otherwise the test fails.
+
+### Another simple version
+
+Execute the following 2 tests. If at least one fails, no points
+will be awarded for this section. Move to the next one. Use the checker
+binary given on the attachments.
+
+- Run "$>ARG="1 5 2 4 3"; ./push_swap $ARG | ./checker_OS $ARG".
+Check that the checker program displays "OK" and that the
+size of the list of instructions from push_swap isn't more
+than 12. Kudos if the size of the list of instructions is 8.
+
+- Run "$>ARG="<5 random values>"; ./push_swap $ARG | ./checker_OS
+$ARG" and replace the placeholder by 5 random valid values.
+Check that the checker program displays "OK" and that the
+size of the list of instructions from push_swap isn't more
+than 12. Otherwise this test fails. You'll have to
+specifically check that the program wasn't developed to only
+answer correctly on the test included in this scale. You
+should repeat this test couple of times with several
+permutations before you validate it.
+
+### Push_swap - Middle version
+
+If the following test fails, no points will be awarded for this
+section. Move to the next one. Move to the next one. Use the checker
+binary given on the attachments.
+
+- Run "$>ARG="<100 random values>"; ./push_swap $ARG |
+./checker_OS $ARG" and replace the placeholder by 100 random
+valid values. Check that the checker program displays "OK"
+and that the size of the list of instructions.
+Give points in accordance:
+- less than 700: 5
+- less than 900: 4
+- less than 1100: 3
+- less than 1300: 2
+- less than 1500: 1 
+You'll have to specifically check that the program wasn't developed to
+only answer correctly on the test included in this scale.
+You should repeat this test couple of times with several
+permutations before you validate it.
+Rate it from 0 (failed) through 5 (excellent)
+
+### Push_swap - Advanced version
+
+If the following test fails, no points will be awarded for this
+section. Move to the next one. Move to the next one. Use the checker
+binary given on the attachments.
+
+- Run "$>ARG="<500 random values>"; ./push_swap $ARG |
+./checker_OS $ARG" and replace the placeholder by 500 random
+valid values (One is not called John/Jane Script for
+nothing). Check that the checker program displays "OK" and
+that the size of the list of instructions
+- less than 5500: 5
+- less than 7000: 4
+- less than 8500: 3
+- less than 10000: 2
+- less than 11500: 1 
+You'll have to specifically check that the program wasn't developed to
+only answer correctly on the test included in this scale.
+You should repeat this test couple of times with several
+permutations before you validate it.
+
+---
+
+## Bonus
+
+Reminder : Remember that for the duration of the defence, no segfault, nor other unexpected, premature, uncontrolled or unexpected termination of the program, else the final grade is 0. Use the appropriate flag. This rule is active throughout the whole defence. We will look at your bonuses if and only if your mandatory part is EXCELLENT. This means that you must complete the mandatory part, beginning to end, and your error management needs to be flawless, even in cases of twisted or bad usage. So if the mandatory part didn't score all the point during this defence bonuses will be totally IGNORED.
+
+### Checker program - Error management
+
 In this section, we'll evaluate the checker's error management.
 If at least one fails, no points will be awarded for this
 section. Move to the next one.
@@ -83,7 +205,8 @@ display "Error".
 one or several spaces before and/or after the action during
 the instruction phase. The program must display "Error".
 
-## Checker program - False tests
+### Checker program - False tests
+
 In this section, we'll evaluate the checker's ability to manage
 a list of instructions that doesn't sort the list. Execute the
 following 2 tests. If at least one fails, no points will be
@@ -104,7 +227,8 @@ answer correctly on the test included in this scale. You
 should repeat this test couple of times with several
 permutations before you validate it.
 
-## Checker program - Right tests
+### Checker program - Right tests
+
 In this section, we'll evaluate the checker's ability to manage
 a liss of instructions that sort the list. Execute the following
 2 tests. If at least one fails, no points will be awarded for
@@ -128,99 +252,3 @@ that the program wasn't developed to only answer correctly on
 the test included in this scale. You should repeat this test
 couple of times with several permutations before you validate
 it.
-
-## Push_swap - Identity test
-In this section, we'll evaluate push_swap's behavior when given
-a list, which has already been sorted. Execute the following 3
-tests. If at least one fails, no points will be awarded for this
-section. Move to the next one.
-
-- Run the following command "$>./push_swap 42". The program
-should display nothing (0 instruction).
-
-- Run the following command "$>./push_swap 0 1 2 3". The
-program should display nothing (0 instruction).
-
-- Run the following command "$>./push_swap 0 1 2 3 4 5 6 7 8
-9". The program should display nothing (0 instruction).
-
-## Push_swap - Simple version
-If the following test fails, no points will be awarded for this
-section. Move to the next one.
-
-- Run "$>ARG="2 1 0"; ./push_swap $ARG | ./checker $ARG".
-Check that the checker program displays "OK" and that the
-size of the list of instructions from push_swap is 2 OR 3.
-Otherwise the test fails.
-
-## Another simple version
-Execute the following 2 tests. If at least one fails, no points
-will be awarded for this section. Move to the next one.
-
-- Run "$>ARG="1 5 2 4 3"; ./push_swap $ARG | ./checker $ARG".
-Check that the checker program displays "OK" and that the
-size of the list of instructions from push_swap isn't more
-than 12. Kudos if the size of the list of instructions is 8.
-
-- Run "$>ARG="<5 random values>"; ./push_swap $ARG | ./checker
-$ARG" and replace the placeholder by 5 random valid values.
-Check that the checker program displays "OK" and that the
-size of the list of instructions from push_swap isn't more
-than 12. Otherwise this test fails. You'll have to
-specifically check that the program wasn't developed to only
-answer correctly on the test included in this scale. You
-should repeat this test couple of times with several
-permutations before you validate it.
-
-## Push_swap - Middle version
-If the following test fails, no points will be awarded for this
-section. Move to the next one.
-
-- Run "$>ARG="<100 random values>"; ./push_swap $ARG |
-./checker $ARG" and replace the placeholder by 100 random
-valid values. Check that the checker program displays "OK"
-and that the size of the list of instructions.
-Give points in accordance:
-- less than 700: 5
-- less than 900: 4
-- less than 1100: 3
-- less than 1300: 2
-- less than 1500: 1
-You'll have to specifically check that the program wasn't developed to
-only answer correctly on the test included in this scale.
-You should repeat this test couple of times with several
-permutations before you validate it.
-Rate it from 0 (failed) through 5 (excellent)
-
-## Push_swap - Advanced version
-If the following test fails, no points will be awarded for this
-section. Move to the next one.
-
-- Run "$>ARG="<500 random values>"; ./push_swap $ARG |
-./checker $ARG" and replace the placeholder by 500 random
-valid values (One is not called John/Jane Script for
-nothing) Check that the checker program displays "OK" and
-that the size of the list of instructions
-- less than 5500: 5
-- less than 7000: 4
-- less than 8500: 3
-- less than 10000: 2
-- less than 11500: 1
-You'll have to specifically check that the program wasn't developed to
-only answer correctly on the test included in this scale.
-You should repeat this test couple of times with several
-permutations before you validate it.
-Rate it from 0 (failed) through 5 (excellent)
-
-# Bonus
-Reminder : Remember that for the duration of the defence, no segfault, nor other unexpected, premature, uncontrolled or unexpected termination of the program, else the final grade is 0. Use the appropriate flag. This rule is active throughout the whole defence. We will look at your bonuses if and only if your mandatory part is EXCELLENT. This means that you must complete the mandatory part, beginning to end, and your error management needs to be flawless, even in cases of twisted or bad usage. So if the mandatory part didn't score all the point during this defence bonuses will be totally IGNORED.
-
-## Some bonuses
-To deserve being considered as such, a bonus must be:
-
-- Useful (you will judge for yourself), no need to exaggerate.
-- Well done
-- Operational, it cannot generate any errors.
-
-ex: -v to display the stacks during processing, -c to display
-with colours, etc...
