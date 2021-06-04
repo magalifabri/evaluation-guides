@@ -85,19 +85,22 @@ as int.
 
 ### Complex types
 Do the functions also work with complex types such as:
-class
-Awesome {
-public:
-Awesome( int n ) : _n( n ) {}
-bool operator==( Awesome const & rhs ) const { return (this->_n == rhs._n); }
-bool operator!=( Awesome const & rhs ) const{ return (this->_n != rhs._n); }
-bool operator>( Awesome const & rhs ) const { return (this->_n > rhs._n); }
-bool operator<( Awesome const & rhs ) const { return (this->_n < rhs._n); }
-bool operator>=( Awesome const & rhs ) const { return (this->_n >= rhs._n); }
-bool operator<=( Awesome const & rhs ) const { return (this->_n <= rhs._n); }
-private:
-int _n;
+```c++
+class Awesome
+{
+    public:
+        Awesome( int n ) : _n( n ) {}
+        bool operator==( Awesome const & rhs ) const { return (this->_n == rhs._n); }
+        bool operator!=( Awesome const & rhs ) const{ return (this->_n != rhs._n); }
+        bool operator>( Awesome const & rhs ) const { return (this->_n > rhs._n); }
+        bool operator<( Awesome const & rhs ) const { return (this->_n < rhs._n); }
+        bool operator>=( Awesome const & rhs ) const { return (this->_n >= rhs._n); }
+        bool operator<=( Awesome const & rhs ) const { return (this->_n <= rhs._n); }
+    
+    private:
+        int _n;
 };
+```
 ?
 
 ---
@@ -107,26 +110,37 @@ The aim of this exercise is to write a generic iteration function through arrays
 
 ### Does it work???
 Test the following code with the student's iter:
+```c++
 class Awesome
 {
-public:
-Awesome( void ) : _n( 42 ) { return; }
-int get( void ) const { return this->_n; }
-private:
-int _n;
+    public:
+        Awesome( void ) : _n( 42 ) { return; }
+        int get( void ) const { return this->_n; }
+    
+    private:
+        int _n;
 };
+
 std::ostream & operator<<( std::ostream & o, Awesome const & rhs ) { o << rhs.get(); return o; }
+
 template< typename T >
-void print( T const & x ) { std::cout << x << std::endl; return; }
-int main() {
-int tab[] = { 0, 1, 2, 3, 4 }; // <--- I never understood why you can't write int[] tab. Wouldn't that make more sense?
-Awesome tab2[5];
-
-iter( tab, 5, print );
-iter( tab2, 5, print );
-
-return 0;
+void print( T const & x )
+{
+    std::cout << x << std::endl;
+    return;
 }
+
+int main()
+{
+    int tab[] = { 0, 1, 2, 3, 4 }; // <--- I never understood why you can't write int[] tab. Wouldn't that make more sense?
+    Awesome tab2[5];
+
+    iter( tab, 5, print );
+    iter( tab2, 5, print );
+
+    return 0;
+}
+```
 If everything went well, it should display:
 
 0
